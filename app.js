@@ -6,6 +6,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const helmet = require('helmet');
+const cors = require('cors');
 const logger = require('./src/util/logger');
 
 const index = require('./routes/index');
@@ -14,12 +15,13 @@ const auth = require('./routes/auth');
 const app = express();
 
 app.use(helmet());
+app.use(cors());
 
 const authMiddleware = require('./middleware/auth');
 
 app.use(morgan('dev'));
 app.use(session({
-  secret: 'PP#BBKB@H',
+  secret: 'A random secure string',
   name: 'ttl',
   resave: true,
   saveUninitialized: true,
