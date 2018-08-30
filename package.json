@@ -1,0 +1,41 @@
+{
+  "name": "sentionario-api",
+  "version": "1.0.0",
+  "description": "Sentionario v2 API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizjr92/sentionario-api.git"
+  },
+  "author": "Luiz Chagas <luizchagasjr@gmail.com> (https://luizchagas.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luizjr92/sentionario-api/issues"
+  },
+  "homepage": "https://github.com/luizjr92/sentionario-api#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "nodemon": "^1.17.5"
+  },
+  "dependencies": {
+    "apicache": "^1.2.1",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "helmet": "^3.12.1",
+    "mongoose": "^5.1.4",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth2": "^0.1.6",
+    "winston": "^3.0.0"
+  }
+}
